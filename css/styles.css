@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+    background-color: hsl(234, 29%, 20%);
+    font-family: 'Roboto';
+}
+
+.container {
+    display: flex;
+    
+    justify-content: center;
+    
+    
+    padding: 25px;
+    ;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    color: hsl(234, 29%, 20%);
+}
+
+p {
+    font-weight: 400;
+    
+    color: hsl(234, 29%, 20%);
+}
+
+.verificado {
+    display: flex;
+    align-items: center;
+    padding: 2px 35px;
+    margin: 5px;
+    background-image: url(./../assets/images/icon-list.svg);
+    background-repeat: no-repeat;
+
+    color: hsl(234, 29%, 20%);
+}
+
+.conteudo label {
+    font-family: 'Roboto';
+    font-size: 13px;
+    padding: 5px;
+    padding-top: 17px;
+
+    color: hsl(234, 29%, 20%);
+}
+
+.conteudo input {
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid hsl(231, 7%, 60%);
+    margin-bottom: 20px;
+}
+
+input:active , input:focus {
+    
+    color: hsl(235, 18%, 26%);;
+}
+
+.conteudo button {
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 55px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+}
+
+.conteudo button:hover {
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    transition: 0.5s;
+}
+
+.conteudo button {
+    font-family: 'Roboto';
+    font-weight: 700;
+    height: 55px;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 10px;
+}
+
+.conteudo button:hover {
+    cursor: pointer;
+    background-color: hsl(4, 100%, 67%);
+    transition: 0.5s;
+}
+
+.imagem__pag {
+    width: 325px;
+    height: 450px;
+    background-image: url(../assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover;
+
+    border-radius: 25px;
+}
+
+@media (max-width: 765px) {
+    .conteudo {
+        order: 1;
+        max-width: 100%;
+        
+    }
+    .container {
+        padding: 0;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagem__pag {
+        width: 100vw;
+        height: 40vh;
+
+        background-image: url(../assets/images/illustration-sign-up-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
